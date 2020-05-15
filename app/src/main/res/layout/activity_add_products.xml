@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProducts">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backTV"
+        android:text="Back"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:padding="8dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/BasicAppColor"
+        android:onClick="back"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/logoIV"
+        android:src="@drawable/logo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoIV"
+        android:id="@+id/AddTV"
+        android:text="ADD PRODUCTS"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_upload"
+        android:layout_below="@id/AddTV"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/productIV"
+        android:background="@drawable/edit_text"
+        android:layout_centerInParent="true"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productIV"
+        android:id="@+id/ProductNameET"
+        android:layout_centerInParent="true"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:hint="Product Name"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ProductNameET"
+        android:id="@+id/ProductPriceET"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:hint="Product Price" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ProductPriceET"
+        android:id="@+id/ProductDesET"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:hint="Description"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/AddBTN"
+        android:layout_below="@id/ProductDesET"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/BasicAppColor"
+        android:text="ADD PRODUCT"
+        android:textColor="@color/colorPrimary"
+        />
+    <ProgressBar
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/ProgressBar"
+        android:layout_centerInParent="true"
+        android:background="@color/BasicAppColor"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/logoIV"
+        android:src="@drawable/logo"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/AddProductBTN"
+        android:layout_below="@id/logoIV"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/signup_btn"
+        android:text="ADD PRODUCTS"
+        android:textColor="@color/colorPrimary"
+        android:onClick="ADD"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/ViewProductBTN"
+        android:layout_below="@id/AddProductBTN"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/signup_btn"
+        android:text="VIEW PRODUCTS"
+        android:textColor="@color/colorPrimary"
+        android:onClick="ViewProduct"
+        />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/DeleteProductBTN"
+        android:layout_below="@id/ViewProductBTN"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/signup_btn"
+        android:text="REMOVE PRODUCTS"
+        android:textColor="@color/colorPrimary"
+        android:onClick="Delete"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/logoutBTN"
+        android:layout_below="@id/DeleteProductBTN"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimary"
+        android:text="LOG OUT"
+        android:textColor="@color/BasicAppColor"
+        android:onClick="Logout"/>
+
+</RelativeLayout>
